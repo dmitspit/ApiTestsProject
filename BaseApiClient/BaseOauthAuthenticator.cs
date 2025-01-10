@@ -1,6 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
-using BaseApiClient.Models.Authentication;
+﻿using BaseApiClient.Models.Authentication;
+
 using RestSharp;
 using RestSharp.Authenticators;
 

@@ -4,7 +4,7 @@ using RestSharp.Authenticators;
 
 namespace BaseApiClient
 {
-    public class OAuthAuthenticator : BaseOauthAuthenticator
+    public class OAuthAuthenticator : BaseOathAuthenticator
     {
         private AuthenticationRequestModel authenticationData;
 

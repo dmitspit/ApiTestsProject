@@ -41,7 +41,7 @@ namespace BaseApiClient.Builders
         public ApiClientBuilder WithCredentials(string authPath, string clientId, string clientSecret)
         {
             this.apiClient.Authenticator =
-                new BaseOauthAuthenticator(this.apiClient.Options.BaseUrl, authPath, clientId, clientSecret);
+                new BaseOathAuthenticator(this.apiClient.Options.BaseUrl, authPath, clientId, clientSecret);
             return this;
         }
 

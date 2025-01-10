@@ -12,7 +12,7 @@ namespace BaseApiClient
         {
             get
             {
-                var auth = this.Authenticator as BaseOauthAuthenticator;
+                var auth = this.Authenticator as BaseOathAuthenticator;
                 return auth.AuthToken;
             }
         }
