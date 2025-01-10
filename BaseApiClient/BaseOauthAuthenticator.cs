@@ -5,7 +5,7 @@ using RestSharp.Authenticators;
 
 namespace BaseApiClient
 {
-    public class BaseOauthAuthenticator : AuthenticatorBase
+    public class BaseOathAuthenticator : AuthenticatorBase
     {
         protected Uri baseUri;
         protected string clientId;
@@ -17,7 +17,7 @@ namespace BaseApiClient
             get => this.Token; 
         }
 
-        public BaseOauthAuthenticator(Uri baseUri, string authResource, string clientId, string secret) : base("")
+        public BaseOathAuthenticator(Uri baseUri, string authResource, string clientId, string secret) : base("")
         {
             this.baseUri = baseUri;
             this.clientId = clientId;
@@ -25,7 +25,7 @@ namespace BaseApiClient
             this.resource = authResource;
         }
         
-        public BaseOauthAuthenticator(string token) : base(token)
+        public BaseOathAuthenticator(string token) : base(token)
         {
         }
 
